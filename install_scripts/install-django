@@ -27,6 +27,9 @@ cd /opt
 
 sudo mkdir django
 sudo chown -R ec2-user django
+
+sleep 5
+
 cd django
 sudo virtualenv django-env
 
