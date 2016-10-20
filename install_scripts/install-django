@@ -43,20 +43,21 @@ echo "now using:"
 
 which python
 
+sudo chown -R ec2-user /opt/django
+
 echo "installing django"
  
 pip install django
+
 
 echo "django admin is version:"
 
 django-admin --version
 
-echo "installing some tools"
-sudo yum -y install tree
-sudo yum -y install vim
-sudo yum -y install nano
+django-admin startproject project1
 
 echo "here's our new django project dir"
 
 tree project1
 
+echo "go to https://docs.djangoproject.com/en/1.10/intro/tutorial01/"
